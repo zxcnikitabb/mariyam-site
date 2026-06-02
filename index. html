@@ -36,7 +36,6 @@
             z-index: 10;
         }
 
-        /* ГАЛЕРЕЯ ИЗ 2 ФОТО (рядом) */
         .gallery {
             display: flex;
             justify-content: center;
@@ -129,7 +128,6 @@
 <body>
 
 <div class="card">
-    <!-- ДВА ФОТО РЯДОМ -->
     <div class="gallery">
         <div class="photo-frame">
             <img id="photo1" src="" alt="Фото 1">
@@ -151,14 +149,12 @@
 </div>
 
 <script>
-    // ⚠️ СЮДА ВСТАВЬ ССЫЛКИ НА ДВА ФОТО ⚠️
+    // ПРАВИЛЬНЫЕ ССЫЛКИ ДЛЯ РЕПОЗИТОРИЯ mariyam-site
     const PHOTO_URLS = [
-      "https://zxcnikitabb.github.io/mariyam/photo1.jpg",
-"https://zxcnikitabb.github.io/mariyam/photo2.jpg"
-        
+        "https://zxcnikitabb.github.io/mariyam-site/photo1.jpg",
+        "https://zxcnikitabb.github.io/mariyam-site/photo2.jpg"
     ];
 
-    // Загружаем фото
     document.getElementById('photo1').src = PHOTO_URLS[0];
     document.getElementById('photo2').src = PHOTO_URLS[1];
 
