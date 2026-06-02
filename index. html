@@ -30,27 +30,20 @@
             backdrop-filter: blur(4px);
             border-radius: 70px;
             padding: 40px 30px;
-            max-width: 550px;
+            max-width: 500px;
             width: 100%;
             box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
             z-index: 10;
         }
 
-        .gallery {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            margin-bottom: 25px;
-        }
-
         .photo-frame {
-            width: 120px;
-            height: 120px;
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 25px;
             border-radius: 50%;
             overflow: hidden;
-            border: 3px solid white;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            border: 4px solid white;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
             background: #ffe0e0;
             display: flex;
             align-items: center;
@@ -128,13 +121,8 @@
 <body>
 
 <div class="card">
-    <div class="gallery">
-        <div class="photo-frame">
-            <img id="photo1" src="" alt="Фото 1">
-        </div>
-        <div class="photo-frame">
-            <img id="photo2" src="" alt="Фото 2">
-        </div>
+    <div class="photo-frame">
+        <img id="userPhoto" src="" alt="Мариям">
     </div>
 
     <h1>Для Мариям ❤️</h1>
@@ -149,13 +137,10 @@
 </div>
 
 <script>
-    const PHOTO_URLS = [
-        "https://zxcnikitabb.github.io/mariyam-site/photo1.jpg",
-        "https://zxcnikitabb.github.io/mariyam-site/photo2.jpg"
-    ];
+    // ССЫЛКА НА ОДНО ФОТО
+    const PHOTO_URL = "https://zxcnikitabb.github.io/mariyam-site/photo.jpg";
 
-    document.getElementById('photo1').src = PHOTO_URLS[0];
-    document.getElementById('photo2').src = PHOTO_URLS[1];
+    document.getElementById('userPhoto').src = PHOTO_URL;
 
     function createHeart() {
         const heart = document.createElement('div');
