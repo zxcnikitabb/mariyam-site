@@ -153,8 +153,9 @@
 <script>
     // ⚠️ СЮДА ВСТАВЬ ССЫЛКИ НА ДВА ФОТО ⚠️
     const PHOTO_URLS = [
-        "ССЫЛКА_НА_ФОТО_1.jpg",
-        "ССЫЛКА_НА_ФОТО_2.jpg"
+      "https://zxcnikitabb.github.io/mariyam/photo1.jpg",
+"https://zxcnikitabb.github.io/mariyam/photo2.jpg"
+        
     ];
 
     // Загружаем фото
